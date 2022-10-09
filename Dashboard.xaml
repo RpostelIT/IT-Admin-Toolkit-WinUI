@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="ITATKWinUI.Dashboard"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ITATKWinUI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+        <ContentControl x:Name="HorizontalExpander"
+                    VerticalContentAlignment="Top">
+            <ContentControl.RenderTransform>
+                <RotateTransform Angle="270"
+                                CenterX="117"
+                                CenterY="117" />
+            </ContentControl.RenderTransform>
+            <Expander Width="234" Header="Health Checkup">
+                <Grid Background="LightPink"
+                    Height="100"
+                    Width="200"
+                    CornerRadius="4">
+                    <StackPanel Padding="5">
+                        <Expander Content="" Header="Scripts Validated" Name="ScriptsValidated"/>
+                        <Expander Content="" Header="Unique Script Count" Name="UniqueScriptCount"/>
+                        <Expander Content="" Header="Prerequisite Software Check" Name="PrereqSoftwareCheck"/>
+                    </StackPanel>
+                </Grid>
+            </Expander>
+        </ContentControl>
+    </StackPanel>
+</Page>

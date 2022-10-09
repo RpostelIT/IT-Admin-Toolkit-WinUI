@@ -609,6 +609,11 @@ namespace ITATKWinUI
                 _page = typeof(Reporting);
                 contentFrame.Navigate(_page);
             }
+            else if (args.SelectedItemContainer.Content.ToString() == "Dashboard") {
+                Type _page = null;
+                _page = typeof(Dashboard);
+                contentFrame.Navigate(_page);
+            }
             else
             {
                 Page _page = GenerateCategoryPageFromXML(args.SelectedItemContainer.Content.ToString());

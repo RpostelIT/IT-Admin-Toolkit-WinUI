@@ -46,7 +46,8 @@
         </NavigationView.Resources>
 
         <NavigationView.MenuItems>
-            <NavigationViewItemHeader Content="Categories"/>
+                <NavigationViewItem Content="Dashboard" IsSelected="False" Icon="Calendar" />
+                <NavigationViewItemHeader Content="Categories"/>
         </NavigationView.MenuItems>
 
         <NavigationView.FooterMenuItems>
